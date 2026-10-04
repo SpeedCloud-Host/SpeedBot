@@ -1,0 +1,21 @@
+{
+  "name": "speedcloud-bot",
+  "version": "2.3.0",
+  "description": "SpeedCloud Hosting WhatsApp Bot com hot reload seletivo.",
+  "main": "src/js/start.js",
+  "scripts": {
+    "start": "node src/js/start.js",
+    "dev": "node src/js/start.js",
+    "check": "node --check src/js/start.js && node --check src/js/conexao.js && node --check speed.js && node --check dono/settings.js && node --check src/js/logger.js"
+  },
+  "keywords": ["whatsapp", "bot", "speedcloud", "baileys", "nodejs"],
+  "author": "SpeedCloud Hosting",
+  "license": "ISC",
+  "engines": {"node": ">=20"},
+  "dependencies": {
+    "baileys": "^7.0.0-rc.3",
+    "chalk": "^4.1.2",
+    "node-cache": "^5.1.2",
+    "pino": "^7.11.0"
+  }
+}
